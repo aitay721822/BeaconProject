@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.SignIn.SignInPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:background="@drawable/gradient"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/user_512px"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="註冊 / Register"
+                    android:textColor="@color/whiteText"
+                    android:textSize="30sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="25dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_gravity="left"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/whiteText"
+                    android:text="Mac 地址 / Mac Address"/>
+                <EditText
+                    android:gravity="left"
+                    android:layout_marginTop="0dp"
+                    android:outlineSpotShadowColor="@color/whiteText"
+                    android:id="@+id/macAddress"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:backgroundTint="@color/grayText"
+                    android:textColorHint="@color/grayText"
+                    android:textColor="@color/grayText"
+                    android:text="Null"
+                    android:inputType="text"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    tools:ignore="DuplicateIds" />
+
+                <TextView
+                    android:layout_gravity="left"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/whiteText"
+                    android:text="姓名 / Name"/>
+                <EditText
+                    android:gravity="left"
+                    android:layout_marginTop="0dp"
+                    android:outlineSpotShadowColor="@color/whiteText"
+                    android:id="@+id/name"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:backgroundTint="@color/whiteText"
+                    android:textColorHint="@color/grayText"
+                    android:textColor="@color/whiteText"
+                    android:hint="請輸入您的姓名..."
+                    android:inputType="text" />
+
+                <TextView
+                    android:layout_gravity="left"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/whiteText"
+                    android:text="使用者代號 / ID"/>
+                <EditText
+                    android:gravity="left"
+                    android:layout_marginTop="0dp"
+                    android:outlineSpotShadowColor="@color/whiteText"
+                    android:id="@+id/userid"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:backgroundTint="@color/whiteText"
+                    android:textColorHint="@color/grayText"
+                    android:textColor="@color/whiteText"
+                    android:hint="請自訂您的使用者名稱..."
+                    android:inputType="text" />
+
+                <TextView
+                    android:layout_gravity="left"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/whiteText"
+                    android:text="電話 / Phone Number"/>
+                <EditText
+                    android:gravity="left"
+                    android:layout_marginTop="0dp"
+                    android:outlineSpotShadowColor="@color/whiteText"
+                    android:id="@+id/phone"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:backgroundTint="@color/whiteText"
+                    android:textColorHint="@color/grayText"
+                    android:textColor="@color/whiteText"
+                    android:hint="請輸入您的電話..."
+                    android:inputType="phone" />
+
+                <TextView
+                    android:layout_gravity="left"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/whiteText"
+                    android:text="電子郵件 / Email"/>
+                <EditText
+                    android:gravity="left"
+                    android:layout_marginTop="0dp"
+                    android:outlineSpotShadowColor="@color/whiteText"
+                    android:id="@+id/email"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:backgroundTint="@color/whiteText"
+                    android:textColorHint="@color/grayText"
+                    android:textColor="@color/whiteText"
+                    android:hint="請輸入您的電子郵件..."
+                    android:inputType="textEmailAddress" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="8.8"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:background="@drawable/hollowbutton_bg"
+                android:text="註冊 / Sign Up"
+                android:onClick="uploadToSql"
+                android:textColor="@drawable/hollowbutton_text"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

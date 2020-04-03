@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="編輯 / Edit"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名 / Name"
+            android:textColor="@color/colorPrimary" />
+
+        <EditText
+            android:hint="請輸入姓名"
+            android:id="@+id/editName"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="備註 / Notice"
+            android:textColor="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/editNotice"
+            android:layout_marginLeft="5dp"
+            android:hint="請輸入備註，非必填"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_alignParentRight="true"
+            android:id="@+id/editCompleteBtn"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="完成"
+            android:background="@drawable/hollowbutton_bg_inverse"
+            android:textColor="@drawable/hollowbutton_text_inverse"/>
+        <Button
+            android:id="@+id/deletedBtn"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="刪除"
+            android:background="@drawable/hollowbutton_bg_inverse_attency"
+            android:textColor="@drawable/hollowbutton_text_inverse"/>
+    </RelativeLayout>
+</LinearLayout>

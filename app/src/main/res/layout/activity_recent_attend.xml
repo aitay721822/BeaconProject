@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.RecentAttend.RecentAttendActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:background="@drawable/gradient"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_weight="3"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/record_512px"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="以下是您的簽到資訊"
+                    android:textColor="@color/whiteText"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="25dp"
+                android:orientation="vertical">
+                <com.beaconproject.main.Common.EmptyRecyclerView
+                    android:background="@color/colorPrimaryDark"
+                    android:id="@+id/showRecent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </com.beaconproject.main.Common.EmptyRecyclerView>
+                <ImageView
+                    android:background="@color/colorPrimaryDark"
+                    android:id="@+id/empty_iv"
+                    android:src="@drawable/empty"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="@null"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:background="@color/whiteText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="8.8"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/hollowbutton_bg"
+                android:onClick="previousStep"
+                android:text="返回"
+                android:textColor="@drawable/hollowbutton_text"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

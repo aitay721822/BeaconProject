@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.beaconproject.main">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".Global.GlobalVariable"
+        android:allowBackup="true"
+        android:icon="@drawable/beacon_launcher"
+        android:label="@string/app_name"
+        android:resizeableActivity="true"
+        android:roundIcon="@drawable/beacon_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".UI.Manage.ManageAddAdmin"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".UI.Manage.ManageEditCheckInStatus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.Manage.ManageEditPeopleInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.Manage.ManageEditActivityInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.Manage.ManageSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.Manage.ManageHomePage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.RecentAttend.RecentAttendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.CheckIn.SelectListPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.CheckIn.CheckInFirstStep"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.Create.AttendList"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".UI.Create.AttendFirstStep"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.Create.SelectPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.SignIn.SignInPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.HomePage"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+
+        <activity
+            android:name=".UI.WelcomePage"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
