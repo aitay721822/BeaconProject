@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.Create.AttendList">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:background="@drawable/gradient"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_weight="3"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/information_512px"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="請輸入欲要參加的名單\t (3/3)"
+                    android:textColor="@color/whiteText"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:gravity="left"
+                    android:layout_marginTop="0dp"
+                    android:outlineSpotShadowColor="@color/whiteText"
+                    android:id="@+id/search"
+                    android:clickable="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:layout_weight="2"
+                    android:backgroundTint="@color/whiteText"
+                    android:textColorHint="@color/grayText"
+                    android:textColor="@color/whiteText"
+                    android:hint="搜尋使用者..."
+                    android:inputType="text" />
+
+                <LinearLayout
+                    android:layout_weight="0"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:clickable="true"
+                        android:id="@+id/import_512"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_margin="5dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:src="@drawable/import_512" />
+
+                    <ImageView
+                        android:id="@+id/add"
+                        android:clickable="true"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:src="@drawable/add" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1.2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+                <com.beaconproject.main.Common.EmptyRecyclerView
+                    android:background="@color/colorPrimaryDark"
+                    android:id="@+id/peopleRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </com.beaconproject.main.Common.EmptyRecyclerView>
+                <ImageView
+                    android:background="@color/colorPrimaryDark"
+                    android:id="@+id/empty_iv"
+                    android:src="@drawable/empty"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="@null"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="8.8"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/hollowbutton_bg"
+                android:onClick="previousStep"
+                android:text="返回"
+                android:textColor="@drawable/hollowbutton_text"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/ActivatyUpload"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/hollowbutton_bg_inverse"
+                android:text="完成"
+                android:textColor="@drawable/hollowbutton_text_inverse"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/adminCard"
+    app:cardBackgroundColor="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="65dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_margin="5dp"
+            android:src="@drawable/admin_g"
+            android:scaleType="centerInside"
+            android:layout_width="65dp"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/adminName"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/whiteText"
+                android:text="airay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
